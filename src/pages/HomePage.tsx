@@ -7,8 +7,6 @@ import { ReceiveFlow } from '../features/receive/ReceiveFlow';
 import { HowItWorks } from '../components/HowItWorks';
 import { useTransferStore } from '../store/useTransferStore';
 
-const CURRENT_YEAR = new Date().getFullYear();
-
 export const HomePage: React.FC = () => {
   const [searchParams] = useSearchParams();
   const {
@@ -100,23 +98,6 @@ export const HomePage: React.FC = () => {
       <div className="w-full max-w-6xl mx-auto pb-16">
         <HowItWorks />
       </div>
-
-      {/* Footer */}
-      <footer className="w-full max-w-6xl mx-auto py-8 border-t border-black/[0.06] dark:border-white/[0.08] text-center text-xs text-[#6E6E73] dark:text-[#98989D] space-y-3">
-        <p className="font-medium text-[#1D1D1F]/70 dark:text-[#F5F5F7]/70">
-          For security we log your IP address and approximate location.
-        </p>
-        <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pt-2">
-          <p>© {CURRENT_YEAR} DropCode. Single-Use Staging Transfer Engine.</p>
-          <div className="flex items-center gap-6">
-            <span>AES-256-GCM Encrypted</span>
-            <span>•</span>
-            <span>India DPDP Compliant</span>
-            <span>•</span>
-            <span>Auto-purged on Delivery</span>
-          </div>
-        </div>
-      </footer>
     </div>
   );
 };

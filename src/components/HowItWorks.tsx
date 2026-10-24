@@ -66,6 +66,16 @@ export const HowItWorks: React.FC = () => {
           );
         })}
       </div>
+
+      <div className="text-center mt-8">
+        <a
+          href="/how-it-works"
+          className="inline-flex items-center gap-1.5 text-xs sm:text-sm font-semibold text-[#0071E3] dark:text-[#0A84FF] hover:underline"
+        >
+          <span>Explore architecture & zero-retention deep-dive</span>
+          <span>→</span>
+        </a>
+      </div>
     </section>
   );
 };

@@ -168,9 +168,15 @@ export interface EntitlementDto {
 
 function getApiBaseUrl(): string {
   const envUrl = (import.meta.env.VITE_API_BASE_URL as string | undefined)?.trim();
-  if (!envUrl) return '/api/v1';
-  const clean = envUrl.replace(/\/+$/, '');
-  return clean.endsWith('/api/v1') ? clean : `${clean}/api/v1`;
+  if (envUrl) {
+    const clean = envUrl.replace(/\/+$/, '');
+    return clean.endsWith('/api/v1') ? clean : `${clean}/api/v1`;
+  }
+  // When running in production on Vercel or any non-localhost domain
+  if (typeof window !== 'undefined' && window.location.hostname !== 'localhost' && window.location.hostname !== '127.0.0.1') {
+    return 'https://windowdrop-backend.onrender.com/api/v1';
+  }
+  return '/api/v1';
 }
 
 const BASE_URL = getApiBaseUrl();

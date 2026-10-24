@@ -42,18 +42,47 @@ export const Navbar: React.FC = () => {
   return (
     <header className="sticky top-0 z-40 w-full glass-nav transition-colors duration-200">
       <div className="w-full px-4 sm:px-8 lg:px-12 h-16 flex items-center justify-between">
-        {/* Left: Logo */}
-        <Link
-          to="/"
-          className="flex items-center gap-2.5 group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0071E3] rounded-[12px] p-1 -m-1"
-        >
-          <div className="w-9 h-9 rounded-[10px] bg-[#0071E3] dark:bg-[#0A84FF] text-white flex items-center justify-center shadow-sm shadow-[#0071E3]/25 transition-transform group-hover:scale-105">
-            <Share2 className="w-5 h-5 stroke-[2.2]" />
-          </div>
-          <span className="font-semibold text-lg tracking-tight text-[#1D1D1F] dark:text-[#F5F5F7]">
-            DropCode
-          </span>
-        </Link>
+        {/* Left: Logo & Nav Links */}
+        <div className="flex items-center gap-4 sm:gap-6">
+          <Link
+            to="/"
+            className="flex items-center gap-2.5 group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0071E3] rounded-[12px] p-1 -m-1"
+          >
+            <div className="w-9 h-9 rounded-[10px] bg-[#0071E3] dark:bg-[#0A84FF] text-white flex items-center justify-center shadow-sm shadow-[#0071E3]/25 transition-transform group-hover:scale-105">
+              <Share2 className="w-5 h-5 stroke-[2.2]" />
+            </div>
+            <span className="font-semibold text-lg tracking-tight text-[#1D1D1F] dark:text-[#F5F5F7]">
+              DropCode
+            </span>
+          </Link>
+
+          <nav className="hidden md:flex items-center gap-1 pl-1">
+            <Link
+              to="/how-it-works"
+              className="px-3 py-1.5 rounded-[12px] text-xs font-medium text-[#6E6E73] dark:text-[#98989D] hover:text-[#1D1D1F] dark:hover:text-[#F5F5F7] hover:bg-black/[0.04] dark:hover:bg-white/[0.06] transition-colors"
+            >
+              How It Works
+            </Link>
+            <Link
+              to="/security"
+              className="px-3 py-1.5 rounded-[12px] text-xs font-medium text-[#6E6E73] dark:text-[#98989D] hover:text-[#1D1D1F] dark:hover:text-[#F5F5F7] hover:bg-black/[0.04] dark:hover:bg-white/[0.06] transition-colors"
+            >
+              Security
+            </Link>
+            <Link
+              to="/faq"
+              className="px-3 py-1.5 rounded-[12px] text-xs font-medium text-[#6E6E73] dark:text-[#98989D] hover:text-[#1D1D1F] dark:hover:text-[#F5F5F7] hover:bg-black/[0.04] dark:hover:bg-white/[0.06] transition-colors"
+            >
+              FAQ
+            </Link>
+            <Link
+              to="/support"
+              className="px-3 py-1.5 rounded-[12px] text-xs font-medium text-[#6E6E73] dark:text-[#98989D] hover:text-[#1D1D1F] dark:hover:text-[#F5F5F7] hover:bg-black/[0.04] dark:hover:bg-white/[0.06] transition-colors"
+            >
+              Support
+            </Link>
+          </nav>
+        </div>
 
         {/* Right Actions */}
         <div className="flex items-center gap-2 sm:gap-3">
