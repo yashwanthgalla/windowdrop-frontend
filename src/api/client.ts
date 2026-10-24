@@ -415,8 +415,8 @@ export class DropCodeApiClient {
   }
 
   // Billing Orders
-  async createOrder(planCode: string): Promise<CashfreeOrderResponse> {
-    return request<CashfreeOrderResponse>('/billing/orders', {
+  async createOrder(planCode: string): Promise<BillingOrderResponse> {
+    return request<BillingOrderResponse>('/billing/orders', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ planCode }),
@@ -446,14 +446,15 @@ export class DropCodeApiClient {
   }
 }
 
-export interface CashfreeOrderResponse {
+export interface BillingOrderResponse {
   orderId: string;
-  paymentSessionId: string;
+  paymentSessionId?: string;
   amountPaise: number;
   planCode: string;
-  cfOrderId?: string;
-  environment: 'sandbox' | 'production';
+  environment?: string;
 }
+
+export type CashfreeOrderResponse = BillingOrderResponse;
 
 export interface UserStats {
   sentCount: number;
