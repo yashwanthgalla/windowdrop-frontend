@@ -30,7 +30,7 @@ export const HowItWorks: React.FC = () => {
     <section className="w-full mt-16 sm:mt-24">
       <div className="text-center mb-10">
         <h2 className="text-2xl sm:text-3xl font-semibold tracking-tight text-[#1D1D1F] dark:text-[#F5F5F7]">
-          How DropCode Works
+          How WindowsDrop Works
         </h2>
         <p className="text-sm sm:text-base text-[#6E6E73] dark:text-[#98989D] mt-1.5">
           Effortless peer-to-peer sharing in three simple steps.

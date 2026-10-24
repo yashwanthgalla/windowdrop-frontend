@@ -322,10 +322,10 @@ export const SupportPage: React.FC = () => {
               Prefer writing directly from your mail client? Email our developer desk directly:
             </p>
             <a
-              href="mailto:support@dropcode.app"
+              href="mailto:support@windowsdrop.app"
               className="inline-block font-mono text-xs font-semibold text-[#0071E3] dark:text-[#0A84FF] hover:underline"
             >
-              support@dropcode.app
+              support@windowsdrop.app
             </a>
           </div>
 

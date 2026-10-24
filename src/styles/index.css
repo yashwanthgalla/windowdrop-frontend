@@ -38,6 +38,10 @@
 }
 
 @layer utilities {
+  .font-sf-pro {
+    font-family: "SF Pro Display", "SF Pro Text", "SF Pro", -apple-system, BlinkMacSystemFont, -apple-system-subheadline, "Inter", sans-serif;
+  }
+
   .glass-nav {
     backdrop-filter: blur(24px) saturate(180%);
     -webkit-backdrop-filter: blur(24px) saturate(180%);

@@ -52,7 +52,7 @@ export const SecurityPage: React.FC = () => {
           Built with Zero-Knowledge & Ephemeral Storage
         </h1>
         <p className="text-base sm:text-lg text-[#6E6E73] dark:text-[#98989D] max-w-2xl mx-auto leading-relaxed">
-          How DropCode protects your files from interception, unauthorized access, and persistent exposure.
+          How WindowsDrop protects your files from interception, unauthorized access, and persistent exposure.
         </p>
       </section>
 
@@ -128,7 +128,7 @@ export const SecurityPage: React.FC = () => {
               <span>3. Single-Use Claim Mutual Exclusion</span>
             </h3>
             <p className="text-xs sm:text-sm text-[#6E6E73] dark:text-[#98989D] leading-relaxed pl-6">
-              To prevent interception or race conditions between multiple parties claiming the same code, DropCode employs an atomic database claim lock. The first receiver to successfully verify the code transitions the transfer state from <code>ready</code> to <code>claimed</code>. Any concurrent attempts are rejected with an access conflict error.
+              To prevent interception or race conditions between multiple parties claiming the same code, WindowsDrop employs an atomic database claim lock. The first receiver to successfully verify the code transitions the transfer state from <code>ready</code> to <code>claimed</code>. Any concurrent attempts are rejected with an access conflict error.
             </p>
           </div>
         </div>
@@ -141,14 +141,14 @@ export const SecurityPage: React.FC = () => {
             Responsible Security Disclosure
           </h3>
           <p className="text-xs text-[#6E6E73] dark:text-[#98989D] max-w-md">
-            If you believe you have discovered a vulnerability in DropCode's cryptographic implementation or API endpoints, please contact our security desk immediately.
+            If you believe you have discovered a vulnerability in WindowsDrop's cryptographic implementation or API endpoints, please contact our security desk immediately.
           </p>
         </div>
         <a
-          href="mailto:security@dropcode.app"
+          href="mailto:security@windowsdrop.app"
           className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-black/[0.05] dark:bg-white/[0.08] hover:bg-black/[0.1] dark:hover:bg-white/[0.12] text-xs font-mono font-semibold text-[#1D1D1F] dark:text-[#F5F5F7] transition-colors"
         >
-          <span>security@dropcode.app</span>
+          <span>security@windowsdrop.app</span>
         </a>
       </section>
     </div>

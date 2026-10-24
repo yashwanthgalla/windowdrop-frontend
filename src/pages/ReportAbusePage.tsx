@@ -54,7 +54,7 @@ export const ReportAbusePage: React.FC = () => {
           Report Abuse or Takedown Request
         </h1>
         <p className="text-base text-[#6E6E73] dark:text-[#98989D] max-w-xl mx-auto leading-relaxed">
-          DropCode strictly prohibits malware, pirated material, phishing, and unlawful files. Use this form to report active transfers for immediate review and purging.
+          WindowsDrop strictly prohibits malware, pirated material, phishing, and unlawful files. Use this form to report active transfers for immediate review and purging.
         </p>
       </section>
 
@@ -75,7 +75,7 @@ export const ReportAbusePage: React.FC = () => {
               Abuse Report Received
             </h2>
             <p className="text-xs sm:text-sm text-[#6E6E73] dark:text-[#98989D] max-w-md mx-auto leading-relaxed">
-              Thank you for keeping DropCode safe. Our safety systems have recorded the report and taken precautionary action on any active staging sessions.
+              Thank you for keeping WindowsDrop safe. Our safety systems have recorded the report and taken precautionary action on any active staging sessions.
             </p>
             <div className="pt-2">
               <button
@@ -184,8 +184,8 @@ export const ReportAbusePage: React.FC = () => {
       <section className="text-center text-xs text-[#6E6E73] dark:text-[#98989D] space-y-1">
         <p>
           You can also reach our Trust & Safety response team directly at{' '}
-          <a href="mailto:abuse@dropcode.app" className="font-mono text-[#FF3B30] dark:text-[#FF453A] hover:underline">
-            abuse@dropcode.app
+          <a href="mailto:abuse@windowsdrop.app" className="font-mono text-[#FF3B30] dark:text-[#FF453A] hover:underline">
+            abuse@windowsdrop.app
           </a>
         </p>
         <p>

@@ -21,11 +21,14 @@ export const Footer: React.FC = () => {
           {/* Brand & Mission */}
           <div className="lg:col-span-2 space-y-4">
             <Link to="/" className="inline-flex items-center gap-2.5 group">
-              <div className="w-8 h-8 rounded-[10px] bg-[#0071E3] dark:bg-[#0A84FF] text-white flex items-center justify-center shadow-sm shadow-[#0071E3]/20">
+              <div className="w-8 h-8 rounded-[10px] bg-[#0071E3] dark:bg-[#0A84FF] text-white flex items-center justify-center shadow-sm shadow-[#0071E3]/20 transition-transform group-hover:scale-105">
                 <Share2 className="w-4 h-4 stroke-[2.2]" />
               </div>
-              <span className="font-semibold text-lg tracking-tight text-[#1D1D1F] dark:text-[#F5F5F7]">
-                DropCode
+              <span
+                className="text-2xl font-bold tracking-tight text-[#0071E3] dark:text-[#0A84FF] font-sf-pro"
+                style={{ fontFamily: '"SF Pro Display", "SF Pro Text", "SF Pro", -apple-system, BlinkMacSystemFont, sans-serif' }}
+              >
+                WindowsDrop
               </span>
             </Link>
             <p className="text-sm text-[#6E6E73] dark:text-[#98989D] max-w-sm leading-relaxed">
@@ -149,7 +152,7 @@ export const Footer: React.FC = () => {
 
         {/* Bottom Bar */}
         <div className="mt-12 pt-6 border-t border-black/[0.06] dark:border-white/[0.08] flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#6E6E73] dark:text-[#98989D]">
-          <p>© {CURRENT_YEAR} DropCode. All rights reserved. Zero-content ephemeral transfer engine.</p>
+          <p>© {CURRENT_YEAR} <span className="font-bold text-[#0071E3] dark:text-[#0A84FF]" style={{ fontFamily: '"SF Pro Display", "SF Pro Text", "SF Pro", -apple-system, BlinkMacSystemFont, sans-serif' }}>WindowsDrop</span>. All rights reserved. Zero-content ephemeral transfer engine.</p>
           <div className="flex flex-wrap items-center gap-4">
             <Link to="/privacy" className="hover:underline">Privacy</Link>
             <span>•</span>

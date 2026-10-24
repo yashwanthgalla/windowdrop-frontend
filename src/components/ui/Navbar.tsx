@@ -51,8 +51,11 @@ export const Navbar: React.FC = () => {
             <div className="w-9 h-9 rounded-[10px] bg-[#0071E3] dark:bg-[#0A84FF] text-white flex items-center justify-center shadow-sm shadow-[#0071E3]/25 transition-transform group-hover:scale-105">
               <Share2 className="w-5 h-5 stroke-[2.2]" />
             </div>
-            <span className="font-semibold text-lg tracking-tight text-[#1D1D1F] dark:text-[#F5F5F7]">
-              DropCode
+            <span
+              className="font-bold text-lg tracking-tight text-[#1D1D1F] dark:text-[#F5F5F7]"
+              style={{ fontFamily: '"SF Pro Display", "SF Pro Text", "SF Pro", -apple-system, BlinkMacSystemFont, sans-serif' }}
+            >
+              Windows<span className="text-[#0071E3] dark:text-[#0A84FF]">Drop</span>
             </span>
           </Link>
 

@@ -18,7 +18,7 @@ interface FaqItem {
 export const FaqPage: React.FC = () => {
   const [searchQuery, setSearchQuery] = useState('');
   const [activeCategory, setActiveCategory] = useState<string>('all');
-  const [openIds, setOpenIds] = useState<string[]>(['what-is-dropcode', 'code-lifetime']);
+  const [openIds, setOpenIds] = useState<string[]>(['what-is-windowsdrop', 'code-lifetime']);
 
   const toggleItem = (id: string) => {
     setOpenIds((prev) =>
@@ -28,11 +28,11 @@ export const FaqPage: React.FC = () => {
 
   const faqs: FaqItem[] = [
     {
-      id: 'what-is-dropcode',
+      id: 'what-is-windowsdrop',
       category: 'general',
-      question: 'What is DropCode and how is it different from Google Drive or Dropbox?',
+      question: 'What is WindowsDrop and how is it different from Google Drive or Dropbox?',
       answer:
-        'DropCode is an ephemeral peer-to-peer file transfer engine, not a permanent cloud drive. Traditional cloud storage keeps your files indefinitely until you manually delete them. DropCode stores your files in a temporary encrypted buffer only long enough for your recipient to receive them. Once downloaded or once the countdown expires, files are automatically shredded and permanently deleted.',
+        'WindowsDrop is an ephemeral peer-to-peer file transfer engine, not a permanent cloud drive. Traditional cloud storage keeps your files indefinitely until you manually delete them. WindowsDrop stores your files in a temporary encrypted buffer only long enough for your recipient to receive them. Once downloaded or once the countdown expires, files are automatically shredded and permanently deleted.',
     },
     {
       id: 'file-size-limits',
@@ -60,21 +60,21 @@ export const FaqPage: React.FC = () => {
       category: 'security',
       question: 'Can someone randomly guess my 8-digit transfer code?',
       answer:
-        'No. Codes are composed of 8 cryptographically random alphanumeric characters from a high-entropy keyspace (over 2.8 trillion combinations). DropCode enforces strict rate limiting: if a visitor fails 5 verification attempts, that transfer session is automatically locked and access is denied.',
+        'No. Codes are composed of 8 cryptographically random alphanumeric characters from a high-entropy keyspace (over 2.8 trillion combinations). WindowsDrop enforces strict rate limiting: if a visitor fails 5 verification attempts, that transfer session is automatically locked and access is denied.',
     },
     {
       id: 'folder-support',
       category: 'general',
       question: 'Can I transfer nested folders and directory structures?',
       answer:
-        'Yes! You can drag and drop folders or click "Add Folder". DropCode preserves the exact relative paths of all subdirectories. When your receiver downloads the transfer, they can download individual files or a single structured ZIP archive with the complete folder hierarchy intact.',
+        'Yes! You can drag and drop folders or click "Add Folder". WindowsDrop preserves the exact relative paths of all subdirectories. When your receiver downloads the transfer, they can download individual files or a single structured ZIP archive with the complete folder hierarchy intact.',
     },
     {
       id: 'account-required',
       category: 'general',
-      question: 'Do I need to sign up or create an account to use DropCode?',
+      question: 'Do I need to sign up or create an account to use WindowsDrop?',
       answer:
-        'No! DropCode is designed to be frictionless. Anyone can send and receive files as a guest immediately. If you choose to sign in with Google or email, you gain access to your transfer history and recipient logs.',
+        'No! WindowsDrop is designed to be frictionless. Anyone can send and receive files as a guest immediately. If you choose to sign in with Google or email, you gain access to your transfer history and recipient logs.',
     },
     {
       id: 'executable-guardrails',
@@ -88,7 +88,7 @@ export const FaqPage: React.FC = () => {
       category: 'security',
       question: 'Can I download a transfer multiple times?',
       answer:
-        'DropCode is single-use by design. Once the receiver confirms that all items are downloaded, the transfer moves to the "delivered" state and the server initiates immediate physical file deletion from disk. If you need to share files again, simply create a new transfer.',
+        'WindowsDrop is single-use by design. Once the receiver confirms that all items are downloaded, the transfer moves to the "delivered" state and the server initiates immediate physical file deletion from disk. If you need to share files again, simply create a new transfer.',
     },
     {
       id: 'transfer-cancelled',
@@ -102,7 +102,7 @@ export const FaqPage: React.FC = () => {
       category: 'troubleshooting',
       question: 'Which devices and browsers are supported?',
       answer:
-        'DropCode works on all modern web browsers supporting ES6 and standard Fetch/XHR APIs, including Google Chrome, Apple Safari, Mozilla Firefox, Microsoft Edge, and mobile browsers on iOS and Android.',
+        'WindowsDrop works on all modern web browsers supporting ES6 and standard Fetch/XHR APIs, including Google Chrome, Apple Safari, Mozilla Firefox, Microsoft Edge, and mobile browsers on iOS and Android.',
     },
   ];
 

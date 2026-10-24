@@ -22,7 +22,7 @@ export const NotFoundPage: React.FC = () => {
 
       <Link to="/">
         <Button variant="primary" size="md" leftIcon={<ArrowLeft className="w-4 h-4" />}>
-          Return to DropCode
+          Return to WindowsDrop
         </Button>
       </Link>
     </div>

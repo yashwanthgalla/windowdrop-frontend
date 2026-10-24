@@ -26,7 +26,7 @@ export const PrivacyPage: React.FC = () => {
           <h2 className="text-base font-semibold">The Zero-Retention Privacy Promise</h2>
         </div>
         <p className="text-xs sm:text-sm text-[#1D1D1F]/90 dark:text-[#F5F5F7]/90 leading-relaxed">
-          DropCode was architected around a single core tenet: <strong>we do not keep your files</strong>. When you upload files for transfer, they exist only as an encrypted temporary buffer until your recipient finishes downloading them, or until the transfer timer elapses. Once delivered or expired, file payloads are permanently shredded from our staging servers.
+          WindowsDrop was architected around a single core tenet: <strong>we do not keep your files</strong>. When you upload files for transfer, they exist only as an encrypted temporary buffer until your recipient finishes downloading them, or until the transfer timer elapses. Once delivered or expired, file payloads are permanently shredded from our staging servers.
         </p>
       </section>
 
@@ -38,7 +38,7 @@ export const PrivacyPage: React.FC = () => {
             1. Information We Collect
           </h2>
           <p>
-            Depending on how you interact with DropCode (as a guest visitor or an authenticated account holder), we may process the following categories of information:
+            Depending on how you interact with WindowsDrop (as a guest visitor or an authenticated account holder), we may process the following categories of information:
           </p>
           <ul className="list-disc pl-5 space-y-1.5 text-xs sm:text-sm text-[#6E6E73] dark:text-[#98989D]">
             <li>
@@ -120,7 +120,7 @@ export const PrivacyPage: React.FC = () => {
             5. Cookies & Local Storage
           </h2>
           <p>
-            DropCode does not use third-party marketing cookies. We use browser LocalStorage strictly for functional purposes:
+            WindowsDrop does not use third-party marketing cookies. We use browser LocalStorage strictly for functional purposes:
           </p>
           <ul className="list-disc pl-5 space-y-1.5 text-xs sm:text-sm text-[#6E6E73] dark:text-[#98989D]">
             <li><code>dropcode-theme</code>: Remembers your dark / light mode display preference.</li>
@@ -137,8 +137,8 @@ export const PrivacyPage: React.FC = () => {
             If you have questions, concerns, or requests concerning this Privacy Policy or your data rights, please contact our team:
           </p>
           <div className="p-4 rounded-xl bg-black/[0.02] dark:bg-white/[0.03] border border-black/[0.04] dark:border-white/[0.06] text-xs">
-            <p className="font-semibold text-[#1D1D1F] dark:text-[#F5F5F7]">DropCode Privacy Desk</p>
-            <p className="text-[#6E6E73] dark:text-[#98989D] mt-0.5">Email: <a href="mailto:privacy@dropcode.app" className="text-[#0071E3] dark:text-[#0A84FF] hover:underline">privacy@dropcode.app</a></p>
+            <p className="font-semibold text-[#1D1D1F] dark:text-[#F5F5F7]">WindowsDrop Privacy Desk</p>
+            <p className="text-[#6E6E73] dark:text-[#98989D] mt-0.5">Email: <a href="mailto:privacy@windowsdrop.app" className="text-[#0071E3] dark:text-[#0A84FF] hover:underline">privacy@windowsdrop.app</a></p>
             <p className="text-[#6E6E73] dark:text-[#98989D]">Or visit our <Link to="/support" className="text-[#0071E3] dark:text-[#0A84FF] hover:underline">Support Center</Link></p>
           </div>
         </section>

@@ -34,7 +34,7 @@ export const HowItWorksPage: React.FC = () => {
     {
       num: '02',
       title: 'Get 8-Digit One-Time Code',
-      desc: 'As soon as your upload finishes staging, DropCode generates an ultra-simple 8-character cryptographic transfer code (formatted as XXXX-XXXX) and an instant QR code.',
+      desc: 'As soon as your upload finishes staging, WindowsDrop generates an ultra-simple 8-character cryptographic transfer code (formatted as XXXX-XXXX) and an instant QR code.',
       icon: KeyRound,
       badge: 'Code Generation',
       color: 'from-amber-500/20 to-orange-500/10 text-[#FF9500]',
@@ -47,7 +47,7 @@ export const HowItWorksPage: React.FC = () => {
     {
       num: '03',
       title: 'Download & Immediate Shredding',
-      desc: 'The recipient visits DropCode on any desktop, laptop, tablet, or phone, enters the 8-digit code or scans the QR, and downloads individual files or a merged ZIP.',
+      desc: 'The recipient visits WindowsDrop on any desktop, laptop, tablet, or phone, enters the 8-digit code or scans the QR, and downloads individual files or a merged ZIP.',
       icon: Download,
       badge: 'Zero-Retention Delivery',
       color: 'from-emerald-500/20 to-teal-500/10 text-[#34C759]',
@@ -63,7 +63,7 @@ export const HowItWorksPage: React.FC = () => {
     {
       icon: Flame,
       title: 'Auto-Shredded Storage',
-      desc: 'Unlike cloud drives that retain files indefinitely, DropCode automatically wipes staged assets the moment delivery completes or the timer reaches zero.',
+      desc: 'Unlike cloud drives that retain files indefinitely, WindowsDrop automatically wipes staged assets the moment delivery completes or the timer reaches zero.',
     },
     {
       icon: Shield,
@@ -91,10 +91,10 @@ export const HowItWorksPage: React.FC = () => {
           <span>Architecture & Workflow</span>
         </div>
         <h1 className="text-4xl sm:text-5xl font-semibold tracking-tight text-[#1D1D1F] dark:text-[#F5F5F7]">
-          How DropCode Works
+          How WindowsDrop Works
         </h1>
         <p className="text-base sm:text-lg text-[#6E6E73] dark:text-[#98989D] max-w-2xl mx-auto leading-relaxed">
-          DropCode was built for one mission: fast, secure, peer-to-peer file transfer with absolute zero content retention.
+          WindowsDrop was built for one mission: fast, secure, peer-to-peer file transfer with absolute zero content retention.
         </p>
       </section>
 
